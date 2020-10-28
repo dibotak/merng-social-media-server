@@ -86,6 +86,7 @@ const FETCH_POST_QUERY = gql`
     getPost(postId: $postId) {
       id body createdAt username likeCount
       likes {
+        id
         username
       }
       commentCount
