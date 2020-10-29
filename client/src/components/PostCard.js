@@ -15,7 +15,7 @@ function PostCard({
 
   return (
     <Card>
-      <Card.Content>
+      <Card.Content as={Link} to={`/posts/${id}`}>
         <Image
           floated='right'
           size='mini'

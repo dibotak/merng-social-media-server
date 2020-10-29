@@ -29,7 +29,7 @@ function LikeButton({ user, post: { id, likes, likeCount } }) {
   );
 
   return (
-    <Button as='div' labelPosition='right' onClick={likePost}>
+    <Button as='div' labelPosition='right' onClick={user ? likePost : () => console.log('user not logged in')}>
       {likeButton}
       <Label basic color="teal" pointing="left">
         {likeCount}
